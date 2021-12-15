@@ -205,7 +205,7 @@ mt.__namecall =
 
 
 
-    local LoaderTitle = "kittenassist.me revamped"
+    local LoaderTitle = "skidassist.me revamped"
 
     local TweenService = game:GetService("TweenService")
 
@@ -342,7 +342,7 @@ mt.__namecall =
             local a = {
                 ["cmd"] = "INVITE_BROWSER",
                 ["args"] = {
-                    ["code"] = game:HttpGet("http://whitelist.kittenassist.me/getDiscordCode")
+                    ["code"] = game:HttpGet("youtube.com/search")
                 },
                 ["nonce"] = game:GetService("HttpService"):GenerateGUID(true)
             }
@@ -351,7 +351,7 @@ mt.__namecall =
 
             http_request(
                 {
-                    Url = "http://127.0.0.1:6463/rpc?v=1",
+                    Url = "among us",
                     Method = "POST",
                     Headers = {
                         ["Content-Type"] = "application/json",
@@ -377,18 +377,18 @@ mt.__namecall =
             LoadedPressed = true
             Loader:Destroy()
             wait(2)
-            if isfile("kittennotif.me") then
-                if readfile("kittennotif.me") ~= "_disabled" then
+            if isfile("skid.me") then
+                if readfile("skid.me") ~= "_disabled" then
                     local StarterGui = game:GetService("StarterGui") -- not sure why you used CoreGui
                     local bindable = Instance.new("BindableFunction")
 
                     function bindable.OnInvoke(response)
                         if response == "Yes" then
-                            writefile("kittennotif.me", "_disabled")
+                            writefile("skid.me", "_disabled")
                             StarterGui:SetCore(
                                 "SendNotification",
                                 {
-                                    Title = "kittenassist.me",
+                                    Title = "skid.me",
                                     Text = "Created a file in workspace, delete it in the future if you want it to keep showing.",
                                     Duration = 5
                                 }
@@ -399,7 +399,7 @@ mt.__namecall =
                     StarterGui:SetCore(
                         "SendNotification",
                         {
-                            Title = "kittenassist.me",
+                            Title = "skid.me",
                             Text = "Would you like to disable the join buyer discord GUI?",
                             Duration = 5,
                             Callback = bindable,
@@ -414,11 +414,11 @@ mt.__namecall =
 
                 function bindable.OnInvoke(response)
                     if response == "Yes" then
-                        writefile("kittennotif.me", "_disabled")
+                        writefile("skid.me", "_disabled")
                         StarterGui:SetCore(
                             "SendNotification",
                             {
-                                Title = "kittenassist.me",
+                                Title = "skid.me",
                                 Text = "Created a file in workspace, delete it in the future if you want it to keep showing.",
                                 Duration = 5
                             }
@@ -429,7 +429,7 @@ mt.__namecall =
                 StarterGui:SetCore(
                     "SendNotification",
                     {
-                        Title = "kittenassist.me",
+                        Title = "skid.me",
                         Text = "Would you like to disable the join buyer discord GUI?",
                         Duration = 5,
                         Callback = bindable,
@@ -472,18 +472,18 @@ mt.__namecall =
             LoadedPressed = true
             Loader:Destroy()
             wait(2)
-            if isfile("kittennotif.me") then
-                if readfile("kittennotif.me") ~= "_disabled" then
+            if isfile("skid.me") then
+                if readfile("skid.me") ~= "_disabled" then
                     local StarterGui = game:GetService("StarterGui") -- not sure why you used CoreGui
                     local bindable = Instance.new("BindableFunction")
 
                     function bindable.OnInvoke(response)
                         if response == "Yes" then
-                            writefile("kittennotif.me", "_disabled")
+                            writefile("skid.me", "_disabled")
                             StarterGui:SetCore(
                                 "SendNotification",
                                 {
-                                    Title = "kittenassist.me",
+                                    Title = "skid.me",
                                     Text = "Created a file in workspace, delete it in the future if you want it to keep showing.",
                                     Duration = 5
                                 }
@@ -494,7 +494,7 @@ mt.__namecall =
                     StarterGui:SetCore(
                         "SendNotification",
                         {
-                            Title = "kittenassist.me",
+                            Title = "skid.me",
                             Text = "Would you like to disable the join buyer discord GUI?",
                             Duration = 5,
                             Callback = bindable,
@@ -509,11 +509,11 @@ mt.__namecall =
 
                 function bindable.OnInvoke(response)
                     if response == "Yes" then
-                        writefile("kittennotif.me", "_disabled")
+                        writefile("skid.me", "_disabled")
                         StarterGui:SetCore(
                             "SendNotification",
                             {
-                                Title = "kittenassist.me",
+                                Title = "skid.me",
                                 Text = "Created a file in workspace, delete it in the future if you want it to keep showing.",
                                 Duration = 5
                             }
@@ -524,7 +524,7 @@ mt.__namecall =
                 StarterGui:SetCore(
                     "SendNotification",
                     {
-                        Title = "kittenassist.me",
+                        Title = "skid.me",
                         Text = "Would you like to disable the join buyer discord GUI?",
                         Duration = 5,
                         Callback = bindable,
@@ -560,8 +560,8 @@ mt.__namecall =
             gui(Start, {TextTransparency = 1})
             --gui(Title, {TextTransparency = 1})
             --gui(Exit, {ImageTransparency = 1})
-            if isfile("kittennotif.me") then
-                if readfile("kittennotif.me") ~= "_disabled" then
+            if isfile("skid.me") then
+                if readfile("skid.me") ~= "_disabled" then
                     TweenService:Create(
                         GameInfo,
                         TweenInfo.new(1, Enum.EasingStyle.Sine, Enum.EasingDirection.In),
@@ -2709,8 +2709,8 @@ end
 do
     --// UI PART
 
-    --// CREATING WINDOW FOR KITTENASSIST
-	local IMGUIWindow = library:AddWindow("kittenassist.me v2", {
+    --// CREATING WINDOW FOR skidassist
+	local IMGUIWindow = library:AddWindow("skid.me", {
 		main_color = Color3.fromRGB(35, 35, 35),
 		min_size = Vector2.new(500, 600),
 		toggle_key = Enum.KeyCode.RightShift,
